@@ -35,6 +35,10 @@
         "no",
         "yes"
     ],
+    "include_pre_commit": [
+        "no",
+        "yes"
+    ],
     "__pdm_version": "2.17.3",
     "__package_slug": "{{ cookiecutter.package_name.lower().replace(' ', '_').replace('-', '_') }}",
     "__python_short_version": "{{ cookiecutter.python_version.split('.')[:2]|join('.') }}",

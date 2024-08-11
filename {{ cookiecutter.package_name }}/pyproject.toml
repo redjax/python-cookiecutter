@@ -42,6 +42,8 @@ dev = [
     "pytest-xdist",
     "black",
     "uv",
+    {%- if cookiecutter.include_pre_commit.lower() == "yes" %}
+    "pre-commit",{%- endif %}
 ]
 
 [tool.pytest.ini_options]
