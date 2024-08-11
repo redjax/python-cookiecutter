@@ -29,11 +29,11 @@ Initialize a Python project. Sets up:
 - Using the `gh:<username>/<repo>` syntax:
 
 ```shell
-cookiecutter gh:redjax/python-cookiecutter
+cookiecutter gh:redjax/python-cookiecutter -o ./
 ```
 
 - Using the full URL to a cookiecutter
 
 ```shell
-cookiecutter https://github.com/redjax/python-cookiecutter.git [-c/--checkout <branch>] [-o/--output-dir] /path/to/cloned/cookiecutter
+cookiecutter https://github.com/redjax/python-cookiecutter.git -o ./
 ```
