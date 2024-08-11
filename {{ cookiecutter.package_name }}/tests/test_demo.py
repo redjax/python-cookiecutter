@@ -11,7 +11,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from pytest import mark
 
-from {{ cookiecutter.project_src }}.__test_demo import demo_test_print
+from {{ cookiecutter.__package_slug }}.__test_demo import demo_test_print
 
 log = logging.getLogger(__name__)
 

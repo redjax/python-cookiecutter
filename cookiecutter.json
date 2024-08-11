@@ -1,10 +1,55 @@
 {
-    "project_name": "",
-    "project_src": "{{ cookiecutter.project_name | replace('-', '_') | replace(' ', '_') }}",
-    "project_description": "",
-    "project_version": "0.1.0",
-    "project_author": "",
-    "project_author_email": "no@none.com",
-    "requires_python": ">=3.11",
-    "dist": "true/false"
+    "package_name": "",
+    "short_description": "",
+    "author_name": "redjax",
+    "author_email": "no@none.com",
+    "python_version": "3.11.8",
+    "distribution": [
+        "yes",
+        "no"
+    ],
+    "license": [
+        "MIT license",
+        "BSD license",
+        "Apache Software License 2.0",
+        "GNU General Public License v3",
+        "All Rights Reserved"
+    ],
+    "include_http_pkgs": [
+        "no",
+        "yes"
+    ],
+    "include_pydantic": [
+        "no",
+        "yes"
+    ],
+    "include_config_helpers": [
+        "no",
+        "yes"
+    ],
+    "include_pandas": [
+        "no",
+        "yes"
+    ],
+    "include_jupyter": [
+        "no",
+        "yes"
+    ],
+    "__pdm_version": "2.17.3",
+    "__package_slug": "{{ cookiecutter.package_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "__python_short_version": "{{ cookiecutter.python_version.split('.')[:2]|join('.') }}",
+    "__requires_python": ">={{ cookiecutter.__python_short_version }}",
+    "__nox_python_versions": [
+        "3.12",
+        "3.11"
+    ],
+    "__http_packages": [
+        "httpx",
+        "hishel",
+        "chardet"
+    ],
+    "__config_packages": [
+        "dynaconf",
+        "pydantic-settings"
+    ]
 }

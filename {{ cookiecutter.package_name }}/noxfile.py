@@ -34,14 +34,14 @@ else:
 log: logging.Logger = logging.getLogger("nox")
 
 ## Define versions to test
-PY_VERSIONS: list[str] = ["3.12", "3.11"]
+PY_VERSIONS: list[str] = {{ cookiecutter.__nox_python_versions }}
 ## Get tuple of Python ver ('maj', 'min', 'mic')
 PY_VER_TUPLE: tuple[str, str, str] = platform.python_version_tuple()
 ## Dynamically set Python version
 DEFAULT_PYTHON: str = f"{PY_VER_TUPLE[0]}.{PY_VER_TUPLE[1]}"
 
 ## Set PDM version to install throughout
-PDM_VER: str = "2.15.4"
+PDM_VER: str = "{{ cookiecutter.__pdm_version }}"
 ## Set paths to lint with the lint session
 LINT_PATHS: list[str] = ["src", "tests"]
 
