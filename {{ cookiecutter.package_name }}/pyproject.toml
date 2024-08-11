@@ -43,7 +43,8 @@ dev = [
     "black",
     "uv",
     {%- if cookiecutter.include_pre_commit.lower() == "yes" %}
-    "pre-commit",{%- endif %}
+    "pre-commit",
+    "pre-commit-update",{%- endif %}
 ]
 
 [tool.pytest.ini_options]
