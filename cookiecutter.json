@@ -1,16 +1,10 @@
 {
-    "project_name": "rename-me",
+    "project_name": "",
     "project_src": "{{ cookiecutter.project_name | replace('-', '_') | replace(' ', '_') }}",
-    "project_description": "Default description for cookiecutter Python project.",
+    "project_description": "",
     "project_version": "0.1.0",
     "project_author": "",
     "project_author_email": "no@none.com",
     "requires_python": ">=3.11",
-    "dist": "true",
-    "_copy_without_render": [
-        "**/__pycache__/",
-        "**/.venv/",
-        "**/*.pyc",
-        "**/.pdm-python"
-    ]
+    "dist": "true/false"
 }
